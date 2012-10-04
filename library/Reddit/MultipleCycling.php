@@ -3,8 +3,7 @@
 /**
  * Reddit Library
  * 
- * @category Reddit
- * @package  Reddit_MultipleCycling
+ * @package  Reddit
  */
 
 namespace Reddit;
@@ -12,8 +11,7 @@ namespace Reddit;
 /**
  * MultipleCycling class
  * 
- * @category Reddit
- * @package  Reddit_MultipleCycling
+ * @package Reddit
  */
 class MultipleCycling
 {
@@ -107,7 +105,7 @@ class MultipleCycling
 
         // Start doing the work
         for ($i = 0; $i <= $max; $i++) {
-            // We can slip past all of the nums until we get to the first in the 
+            // We can slip past all of the nums until we get to the first in the
             // list if we have yet to get the first match
             if ($i < $nums[$numsIx]) {
                 continue;
@@ -145,7 +143,7 @@ class MultipleCycling
         while ($current < $limit) {
             $cycles++;
 
-            $current = $this->next_highest_multiple($current, current($numbers));
+            $current = $this->nextHighestMultiple($current, current($numbers));
 
             \next($numbers) or \reset($numbers);
         }
@@ -153,17 +151,18 @@ class MultipleCycling
         return $cycles;
     }
 
-    protected function next_highest_multiple($number, $multiple)
+    protected function nextHighestMultiple($number, $multiple)
     {
-        if ($number == 0)
+        if ($number == 0) {
             return $multiple;
+        }
 
-        if ($multiple == 0)
+        if ($multiple == 0) {
             return $number;
+        }
 
         return ( ($remainder = $number % $multiple) ?
                 $number + $multiple - $remainder : $number
             );
     }
-
 }

@@ -3,7 +3,7 @@
 /**
  * TDD Library
  * 
- * @category Kata
+ * @package Kata
  */
 
 namespace Kata;
@@ -11,7 +11,7 @@ namespace Kata;
 /**
  * FizzBuzz class
  * 
- * @category Kata
+ * @package Kata
  */
 class FizzBuzz
 {
@@ -41,5 +41,4 @@ class FizzBuzz
 
         return $result;
     }
-
 }

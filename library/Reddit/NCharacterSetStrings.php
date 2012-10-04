@@ -3,7 +3,7 @@
 /**
  * Reddit Library
  * 
- * @category Reddit
+ * @package Reddit
  */
 
 namespace Reddit;
@@ -22,7 +22,7 @@ namespace Reddit;
  * 
  * Dictionary: http://code.google.com/p/dotnetperls-controls/downloads/detail?name=enable1.txt
  * 
- * @category Reddit
+ * @package Reddit
  */
 class NCharacterSetStrings
 {
@@ -38,5 +38,4 @@ class NCharacterSetStrings
     {
         return (count(count_chars($string, 1)) <= $limit);
     }
-
 }
