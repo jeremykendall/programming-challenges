@@ -135,6 +135,13 @@ class MultipleCycling
         return $count;
     }
 
+    /**
+     * Implementation by David Rogers {@link http://twitter.com/al_the_x}
+     *  
+     * @param  int   $limit   Maximum iterations to find multiples over
+     * @param  array $numbers The list of numbers to check multiples of
+     * @return int            The number of multiples found in the list up to $max
+     */
     public function multipleCycleAlTheX($limit, array $numbers)
     {
         $current = 0;
@@ -151,6 +158,13 @@ class MultipleCycling
         return $cycles;
     }
 
+    /**
+     * Used by MultipleCycling::multipleCycleAlTheX()
+     * 
+     * @param int $number
+     * @param int $multiple
+     * @return int
+     */
     protected function nextHighestMultiple($number, $multiple)
     {
         if ($number == 0) {
