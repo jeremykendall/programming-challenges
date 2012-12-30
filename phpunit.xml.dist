@@ -5,6 +5,9 @@
         <testsuite name="Programming challenges">
             <directory>tests/library</directory>
         </testsuite>
+        <testsuite name="bowling">
+            <directory>tests/library/Kata/BowlingGame</directory>
+        </testsuite>
     </testsuites>
     
     <filter>
