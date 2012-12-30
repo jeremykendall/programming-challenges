@@ -2,7 +2,7 @@
 
 /**
  * Reddit Library
- * 
+ *
  * @package  Reddit
  */
 
@@ -10,16 +10,16 @@ namespace Reddit;
 
 /**
  * MultipleCycling class
- * 
+ *
  * @package Reddit
  */
 class MultipleCycling
 {
 
     /**
-     * Write a function that takes two arguments: a limit, lim, and a list of 
-     * integers, x. The function counts up from 0 by cycling through x and 
-     * skipping numbers until we find the next number that's a multiple of x[i]. 
+     * Write a function that takes two arguments: a limit, lim, and a list of
+     * integers, x. The function counts up from 0 by cycling through x and
+     * skipping numbers until we find the next number that's a multiple of x[i].
      * For example, when x is the list [5, 7, 3], start counting from 0:
      *
      * Next multiple of 5 is 5
@@ -29,13 +29,13 @@ class MultipleCycling
      * Next multiple of 7 is 14
      * Next multiple of 3 is 15
      *
-     * When the count reaches lim or a number above it, return the number of 
+     * When the count reaches lim or a number above it, return the number of
      * steps it took to reach it. (multiple_cycle(15, [5, 7, 3]) would return 6.)
-     * 
-     * @link http://www.reddit.com/r/dailyprogrammer/comments/zx98u/9152012_challenge_98_intermediate_multiple_cycling/ 
-     * 
-     * @param int $limit
-     * @param array $numbers
+     *
+     * @link http://www.reddit.com/r/dailyprogrammer/comments/zx98u/9152012_challenge_98_intermediate_multiple_cycling/
+     *
+     * @param  int   $limit
+     * @param  array $numbers
      * @return int
      */
     public function multipleCycleJeremy($limit, array $numbers)
@@ -61,9 +61,9 @@ class MultipleCycling
 
     /**
      * Solution by Reddit user mrthedon.
-     * 
-     * @param type $lim
-     * @param array $x
+     *
+     * @param  type  $lim
+     * @param  array $x
      * @return int
      */
     public function multipleCycleMrThedon($lim, array $x)
@@ -87,10 +87,10 @@ class MultipleCycling
 
     /**
      * Does a count of multiples of a number from a list up to $max number of iterations
-     * 
+     *
      * @param  int   $max  Maximum iterations to find multiples over
      * @param  array $nums The list of numbers to check multiples of
-     * @return int         The number of multiples found in the list up to $max
+     * @return int   The number of multiples found in the list up to $max
      */
     public function multipleCycleGonzalez($max, $nums)
     {
@@ -137,10 +137,10 @@ class MultipleCycling
 
     /**
      * Implementation by David Rogers {@link http://twitter.com/al_the_x}
-     *  
+     *
      * @param  int   $limit   Maximum iterations to find multiples over
      * @param  array $numbers The list of numbers to check multiples of
-     * @return int            The number of multiples found in the list up to $max
+     * @return int   The number of multiples found in the list up to $max
      */
     public function multipleCycleAlTheX($limit, array $numbers)
     {
@@ -160,9 +160,9 @@ class MultipleCycling
 
     /**
      * Used by MultipleCycling::multipleCycleAlTheX()
-     * 
-     * @param int $number
-     * @param int $multiple
+     *
+     * @param  int $number
+     * @param  int $multiple
      * @return int
      */
     protected function nextHighestMultiple($number, $multiple)

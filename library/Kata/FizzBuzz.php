@@ -2,7 +2,7 @@
 
 /**
  * TDD Library
- * 
+ *
  * @package Kata
  */
 
@@ -10,7 +10,7 @@ namespace Kata;
 
 /**
  * FizzBuzz class
- * 
+ *
  * @package Kata
  */
 class FizzBuzz
@@ -19,8 +19,8 @@ class FizzBuzz
     /**
      * Returns Fizz if multiple of 3, Buzz if multiple of 5, FizzBuzz if multiple
      * of 3 and 5. Returns $number if none of those conditions are met.
-     * 
-     * @param int $number
+     *
+     * @param  int   $number
      * @return mixed int if not multiple of 3 or 5, string otherwise
      */
     public function of($number)
